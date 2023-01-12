@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".StaffLogin">
+
+    <TextView
+        android:id="@+id/tv_stafflog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="71dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Staff"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_stafflogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_stafflog"
+        app:layout_constraintStart_toStartOf="@+id/tv_stafflog"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stafflog" />
+
+    <EditText
+        android:id="@+id/ed_stafflogemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <EditText
+        android:id="@+id/ed_stafflogpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_stafflogemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_stafflogemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_stafflogemail" />
+
+    <Button
+        android:id="@+id/button_stafflogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Log In"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ed_stafflogpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_stafflogpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_stafflogpasswrd" />
+
+    <TextView
+        android:id="@+id/tv_staffloglink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Wnat to be an Alimento-Staff? Sign Up"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_stafflogin"
+        app:layout_constraintStart_toStartOf="@+id/button_stafflogin"
+        app:layout_constraintTop_toBottomOf="@+id/button_stafflogin" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="295dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_stafflogin"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/tv_stafflogin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stafflogin"
+        app:srcCompat="@drawable/stafflog" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    android:paddingLeft="5dp"
+    tools:context=".CatererLogin">
+
+    <TextView
+        android:id="@+id/tv_catloglink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Want to be an Alimento-Caterer? Sign Up"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_catlogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_catlogin"
+        app:layout_constraintTop_toBottomOf="@+id/button_catlogin" />
+
+    <EditText
+        android:id="@+id/ed_catlogemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/ed_catlogpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catlogemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_catlogemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catlogemail" />
+
+    <TextView
+        android:id="@+id/tv_catlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Caterer"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_catlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_catlog"
+        app:layout_constraintStart_toStartOf="@+id/tv_catlog"
+        app:layout_constraintTop_toBottomOf="@+id/tv_catlog" />
+
+    <Button
+        android:id="@+id/button_catlogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Log In"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catlogpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_catlogpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catlogpasswrd" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="360dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_catlogin"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/tv_catlogin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_catlogin"
+        app:srcCompat="@drawable/catlog" />
+</androidx.constraintlayout.widget.ConstraintLayout>

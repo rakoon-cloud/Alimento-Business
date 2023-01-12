@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    android:paddingLeft="10dp"
+    tools:context=".ChefSignup">
+
+    <TextView
+        android:id="@+id/tv_chef_signpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Chef"
+        android:textColor="#040404"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_chefsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Sign Up"
+        android:textColor="#040404"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chef_signpage"
+        app:layout_constraintStart_toStartOf="@+id/tv_chef_signpage"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chef_signpage" />
+
+    <EditText
+        android:id="@+id/ed_chefsignname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/ed_chefsignemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_chefsignname"
+        app:layout_constraintStart_toStartOf="@+id/ed_chefsignname"
+        app:layout_constraintTop_toBottomOf="@+id/ed_chefsignname" />
+
+    <EditText
+        android:id="@+id/ed_chefsignpass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_chefphone"
+        app:layout_constraintStart_toStartOf="@+id/ed_chefphone"
+        app:layout_constraintTop_toBottomOf="@+id/ed_chefphone" />
+
+    <Button
+        android:id="@+id/button_chefsignup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Sign Up"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="@+id/ed_signconfpass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_signconfpass"
+        app:layout_constraintTop_toBottomOf="@+id/ed_signconfpass" />
+
+    <TextView
+        android:id="@+id/tv_chefsignlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Already an Alimento-Chef? Log In"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_chefsignup"
+        app:layout_constraintStart_toStartOf="@+id/button_chefsignup"
+        app:layout_constraintTop_toBottomOf="@+id/button_chefsignup" />
+
+    <EditText
+        android:id="@+id/ed_signconfpass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_chefsignpass"
+        app:layout_constraintStart_toStartOf="@+id/ed_chefsignpass"
+        app:layout_constraintTop_toBottomOf="@+id/ed_chefsignpass" />
+
+    <EditText
+        android:id="@+id/ed_chefphone"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Ph.no"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_chefsignemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_chefsignemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_chefsignemail" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="277dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chefsignup"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="@+id/tv_chefsignup"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chefsignup"
+        app:srcCompat="@drawable/chefsign" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

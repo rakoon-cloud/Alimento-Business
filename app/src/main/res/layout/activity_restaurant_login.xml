@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".RestaurantLogin">
+
+    <TextView
+        android:id="@+id/tv_reastuarantlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Restaurant"
+        android:textColor="#070707"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_restuarantlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Login"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_reastuarantlog"
+        app:layout_constraintStart_toStartOf="@+id/tv_reastuarantlog"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reastuarantlog" />
+
+    <EditText
+        android:id="@+id/ed_restlogemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <EditText
+        android:id="@+id/ed_restlogpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restlogemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_restlogemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restlogemail" />
+
+    <Button
+        android:id="@+id/button_restlog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Log In"
+        android:textColor="#FFFDFD"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restlogpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_restlogpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restlogpasswrd" />
+
+    <TextView
+        android:id="@+id/tv_restloglink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Want to be an Alimento-Restaurant? Sign Up"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_restlog"
+        app:layout_constraintStart_toStartOf="@+id/button_restlog"
+        app:layout_constraintTop_toBottomOf="@+id/button_restlog" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="328dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_restuarantlogin"
+        app:layout_constraintStart_toStartOf="@+id/tv_restuarantlogin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restuarantlogin"
+        app:srcCompat="@drawable/restlog" />
+</androidx.constraintlayout.widget.ConstraintLayout>

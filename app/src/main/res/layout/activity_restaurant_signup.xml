@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".RestaurantSignup">
+
+    <TextView
+        android:id="@+id/tv_restaurantsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Restaurant"
+        android:textColor="#050505"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_restaurantsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Sign Up"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_restaurantsign"
+        app:layout_constraintStart_toStartOf="@+id/tv_restaurantsign"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restaurantsign" />
+
+    <EditText
+        android:id="@+id/ed_restsignname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Restaurant Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <EditText
+        android:id="@+id/ed_restsignemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restsignname"
+        app:layout_constraintStart_toStartOf="@+id/ed_restsignname"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restsignname" />
+
+    <EditText
+        android:id="@+id/ed_restsignphno"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Ph.no"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restsignemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_restsignemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restsignemail" />
+
+    <EditText
+        android:id="@+id/ed_restsignpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restsignphno"
+        app:layout_constraintStart_toStartOf="@+id/ed_restsignphno"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restsignphno" />
+
+    <EditText
+        android:id="@+id/ed_restsignconfpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restsignpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_restsignpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restsignpasswrd" />
+
+    <Button
+        android:id="@+id/button_restsignup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="sign up"
+        android:textColor="#FDFCFC"
+        app:layout_constraintEnd_toEndOf="@+id/ed_restsignconfpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_restsignconfpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_restsignconfpasswrd" />
+
+    <TextView
+        android:id="@+id/tv_restsignlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Already an Alimento-Restaurant? Log In"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_restsignup"
+        app:layout_constraintStart_toStartOf="@+id/button_restsignup"
+        app:layout_constraintTop_toBottomOf="@+id/button_restsignup" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="319dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_restaurantsignup"
+        app:layout_constraintStart_toStartOf="@+id/tv_restaurantsignup"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restaurantsignup"
+        app:srcCompat="@drawable/restsign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".CatererAddProfile">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="107dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Add your Profile"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_catagencyname"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Agency Name:"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/ed_catownername"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Owner Name:"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catagencyname"
+        app:layout_constraintStart_toStartOf="@+id/ed_catagencyname"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catagencyname" />
+
+    <EditText
+        android:id="@+id/ed_cataddress"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:gravity="start|top"
+        android:hint="Address:"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catownername"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catownername" />
+
+    <EditText
+        android:id="@+id/ed_agencyemail"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_cataddress"
+        app:layout_constraintStart_toStartOf="@+id/ed_cataddress"
+        app:layout_constraintTop_toBottomOf="@+id/ed_cataddress" />
+
+    <EditText
+        android:id="@+id/ed_agencyphone"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Ph.no:"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_agencyemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_agencyemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_agencyemail" />
+
+    <EditText
+        android:id="@+id/ed_catdescription"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:gravity="start|top"
+        android:hint="Agency Description:"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_agencyphone"
+        app:layout_constraintStart_toStartOf="@+id/ed_agencyphone"
+        app:layout_constraintTop_toBottomOf="@+id/ed_agencyphone" />
+
+    <EditText
+        android:id="@+id/ed_catcapacity"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:gravity="start|top"
+        android:hint="Event Capacity:"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catdescription"
+        app:layout_constraintStart_toStartOf="@+id/ed_catdescription"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catdescription" />
+
+    <Button
+        android:id="@+id/button_catsaveprofile"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Save Profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catcapacity"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catcapacity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

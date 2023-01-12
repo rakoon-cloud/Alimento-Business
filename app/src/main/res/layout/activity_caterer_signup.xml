@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".CatererSignup">
+
+    <TextView
+        android:id="@+id/tv_catsignlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Already an Alimento-Caterer? Log In"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_catsignin"
+        app:layout_constraintStart_toStartOf="@+id/button_catsignin"
+        app:layout_constraintTop_toBottomOf="@+id/button_catsignin" />
+
+    <EditText
+        android:id="@+id/ed_catsignname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <EditText
+        android:id="@+id/ed_catsignemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catsignname"
+        app:layout_constraintStart_toStartOf="@+id/ed_catsignname"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catsignname" />
+
+    <EditText
+        android:id="@+id/ed_catsignpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catsignphno"
+        app:layout_constraintStart_toStartOf="@+id/ed_catsignphno"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catsignphno" />
+
+    <EditText
+        android:id="@+id/ed_catsignphno"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Ph.no"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catsignemail"
+        app:layout_constraintStart_toStartOf="@+id/ed_catsignemail"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catsignemail" />
+
+    <EditText
+        android:id="@+id/ed_catsignconfpasswrd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catsignpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_catsignpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catsignpasswrd" />
+
+    <TextView
+        android:id="@+id/tv_catsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Caterer"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_catsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_catsign"
+        app:layout_constraintStart_toStartOf="@+id/tv_catsign"
+        app:layout_constraintTop_toBottomOf="@+id/tv_catsign" />
+
+    <Button
+        android:id="@+id/button_catsignin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ed_catsignconfpasswrd"
+        app:layout_constraintStart_toStartOf="@+id/ed_catsignconfpasswrd"
+        app:layout_constraintTop_toBottomOf="@+id/ed_catsignconfpasswrd" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="289dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_catsignin"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/tv_catsignin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_catsignin"
+        app:srcCompat="@drawable/catsign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

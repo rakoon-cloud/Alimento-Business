@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="149dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text=" Enter your Recipe"
+        android:textColor="#040303"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_repname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Recipe Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#050505"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/tv_recipe"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/tv_recipe"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recipe" />
+
+    <EditText
+        android:id="@+id/ed_prep"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Prep Time"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_repname" />
+
+    <EditText
+        android:id="@+id/ed_duration"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Duration"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_repname" />
+
+    <EditText
+        android:id="@+id/ed_ing"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:gravity="start|top"
+        android:hint="Ingredients"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:textColor="#020202"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_duration"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_prep"
+        app:layout_constraintTop_toBottomOf="@+id/ed_prep" />
+
+    <EditText
+        android:id="@+id/ed_dir"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:gravity="start|top"
+        android:hint="Directions"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:textColor="#040404"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_ing"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_ing"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ing" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Upload Recipe"
+        android:textColor="#F3EFEF"
+        app:layout_constraintEnd_toEndOf="@+id/ed_dir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ed_dir"
+        app:layout_constraintTop_toBottomOf="@+id/ed_dir" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="208dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_repname"
+        app:layout_constraintStart_toStartOf="@+id/ed_repname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recipe"
+        app:srcCompat="@drawable/recipe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

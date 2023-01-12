@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    tools:context=".StaffSignup">
+
+    <EditText
+        android:id="@+id/ed_staffsignname"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <EditText
+        android:id="@+id/ed_staffsignaddress"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:gravity="start|top"
+        android:hint="Address:"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_staffsignname"
+        app:layout_constraintStart_toStartOf="@+id/ed_staffsignname"
+        app:layout_constraintTop_toBottomOf="@+id/ed_staffsignname" />
+
+    <EditText
+        android:id="@+id/ed_staffsignphno"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Ph.no"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_staffsignaddress"
+        app:layout_constraintStart_toStartOf="@+id/ed_staffsignaddress"
+        app:layout_constraintTop_toBottomOf="@+id/ed_staffsignaddress" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_staffsignphno"
+        app:layout_constraintStart_toStartOf="@+id/ed_staffsignphno"
+        app:layout_constraintTop_toBottomOf="@+id/ed_staffsignphno" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <Button
+        android:id="@+id/button_staffsignin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/tv_staffsignlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Already an Alimento-Staff? Log In"
+        android:textColor="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/button_staffsignin"
+        app:layout_constraintStart_toStartOf="@+id/button_staffsignin"
+        app:layout_constraintTop_toBottomOf="@+id/button_staffsignin" />
+
+    <TextView
+        android:id="@+id/tv_staffsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="71dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Alimento-Staff"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_staffsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_staffsign"
+        app:layout_constraintStart_toStartOf="@+id/tv_staffsign"
+        app:layout_constraintTop_toBottomOf="@+id/tv_staffsign" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="338dp"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_staffsignin"
+        app:layout_constraintStart_toStartOf="@+id/tv_staffsignin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_staffsignin"
+        app:srcCompat="@drawable/staffsign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
