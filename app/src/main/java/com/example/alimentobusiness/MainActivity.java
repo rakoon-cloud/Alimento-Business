@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 String directions=dir.getText().toString();
 
                 Map<String,String>Recipes=new HashMap<>();
-                Recipes.put("repname", recipename);
+                Recipes.put("recipename", recipename);
                 Recipes.put("prep", preptime);
                 Recipes.put("time", duration);
                 Recipes.put("ing", ingredients);
