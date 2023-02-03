@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="43dp"
+    android:layout_marginEnd="31dp"
+    android:background="@color/offwhite"
+    app:cardBackgroundColor="@color/cardback"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+
+        android:id="@+id/tv_booker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="110dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Person Name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_bookdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Date:"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</androidx.cardview.widget.CardView>

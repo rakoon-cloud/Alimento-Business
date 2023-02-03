@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offwhite"
+    android:paddingLeft="5dp"
+    tools:context=".ManageMenu">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="114dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Add Food Item"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <ImageView
+            android:id="@+id/iv_foodimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:tooltipText="Choose Food Image" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/ed_foodname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Food Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/ed_fooddescription"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Food Description"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_foodname"
+        app:layout_constraintStart_toStartOf="@+id/ed_foodname"
+        app:layout_constraintTop_toBottomOf="@+id/ed_foodname" />
+
+    <EditText
+        android:id="@+id/ed_foodprice"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Price"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintStart_toStartOf="@+id/ed_fooddescription"
+        app:layout_constraintTop_toBottomOf="@+id/ed_fooddescription" />
+
+    <EditText
+        android:id="@+id/ed_foodtime"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:hint="Delivery Time"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#595757"
+        app:layout_constraintEnd_toEndOf="@+id/ed_fooddescription"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ed_foodprice"
+        app:layout_constraintTop_toBottomOf="@+id/ed_fooddescription" />
+
+    <Button
+        android:id="@+id/button_uploadfood"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Upload Food"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ed_foodtime"
+        app:layout_constraintStart_toStartOf="@+id/ed_foodprice"
+        app:layout_constraintTop_toBottomOf="@+id/ed_foodtime" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/comfortaa_variablefont_wght"
+        android:text="Food Image"
+        android:textColor="#595757"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

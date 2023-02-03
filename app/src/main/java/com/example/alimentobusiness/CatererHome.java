@@ -12,6 +12,7 @@ public class CatererHome extends AppCompatActivity {
 
     Button addcatererprofile;
     CardView catinfo;
+    CardView catbooking;
 
 
     @Override
@@ -21,12 +22,20 @@ public class CatererHome extends AppCompatActivity {
 
         addcatererprofile=findViewById(R.id.button_addcatprofile);
         catinfo=findViewById(R.id.card_catinfo);
+        catbooking=findViewById(R.id.card_catbook);
 
         catinfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent a= new Intent(CatererHome.this, CatererViewProfile.class);
                 startActivity(a);
+            }
+        });
+        catbooking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent viewbooking=new Intent(CatererHome.this, CatererViewBooking.class);
+                startActivity(viewbooking);
             }
         });
 
