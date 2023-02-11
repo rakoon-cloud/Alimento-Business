@@ -1,6 +1,7 @@
 package com.example.alimentobusiness;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
         holder.bkfullname.setText(bookingData.bkfullname);
         holder.bkdate.setText(bookingData.bkdate);
 
+
     }
 
     @Override
@@ -50,6 +52,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
             super(itemView);
             bkfullname=itemView.findViewById(R.id.tv_booker);
             bkdate=itemView.findViewById(R.id.tv_bookdate);
+
         }
     }
 }

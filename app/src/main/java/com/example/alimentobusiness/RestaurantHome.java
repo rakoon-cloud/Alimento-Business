@@ -3,6 +3,7 @@ package com.example.alimentobusiness;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,9 +16,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RestaurantHome extends AppCompatActivity {
-    CardView cardaddfood;
+    CardView cardaddfood, cardaddseatarrangement;
 
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +34,20 @@ public class RestaurantHome extends AppCompatActivity {
         }
 
         cardaddfood = findViewById(R.id.cardaddmenu);
+        cardaddseatarrangement = findViewById(R.id.cardaddseats);
 
         cardaddfood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent foodpage = new Intent(RestaurantHome.this, ManageMenu.class);
                 startActivity(foodpage);
+            }
+        });
+        cardaddseatarrangement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent seatpage = new Intent(RestaurantHome.this, AddSeats.class);
+                startActivity(seatpage);
             }
         });
 

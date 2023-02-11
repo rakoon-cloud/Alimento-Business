@@ -2,13 +2,14 @@ package com.example.alimentobusiness;
 
 public class BookingData {
 
-    String bkfullname, bkdate;
+    String bkfullname, bkdate, bkagencyname;
 
     public  BookingData(){}
 
     public BookingData(String bkfullname, String bkdate) {
         this.bkfullname = bkfullname;
         this.bkdate = bkdate;
+
     }
 
     public String getBkfullname() {
@@ -26,4 +27,6 @@ public class BookingData {
     public void setBkdate(String bkdate) {
         this.bkdate = bkdate;
     }
+
+
 }

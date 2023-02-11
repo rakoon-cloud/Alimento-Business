@@ -24,26 +24,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+
+    <ImageView
+        android:id="@+id/iv_foodimg"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/white"
-
-        app:cardCornerRadius="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/baseline_add_photo_alternate_24"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:tooltipText="Choose Food Image"
         app:layout_constraintEnd_toEndOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
-
-        <ImageView
-            android:id="@+id/iv_foodimg"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clickable="true"
-            android:scaleType="fitCenter"
-            android:tooltipText="Choose Food Image" />
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/ed_foodname"
@@ -66,7 +60,7 @@
         android:id="@+id/ed_fooddescription"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/border"
         android:ems="10"
         android:fontFamily="@font/comfortaa_variablefont_wght"
@@ -76,6 +70,7 @@
         android:textColor="@color/black"
         android:textColorHint="#595757"
         app:layout_constraintEnd_toEndOf="@+id/ed_foodname"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/ed_foodname"
         app:layout_constraintTop_toBottomOf="@+id/ed_foodname" />
 
@@ -135,9 +130,10 @@
         android:text="Food Image"
         android:textColor="#595757"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/cardView4"
-        app:layout_constraintStart_toStartOf="@+id/cardView4"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+        app:layout_constraintEnd_toEndOf="@+id/iv_foodimg"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="@+id/iv_foodimg"
+        app:layout_constraintTop_toBottomOf="@+id/iv_foodimg" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,8 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -26,7 +28,6 @@ public class CatererViewBooking extends AppCompatActivity {
 
     BookingAdapter myAdapter;
 
-    FirebaseFirestore db;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -34,39 +35,19 @@ public class CatererViewBooking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caterer_view_booking);
 
+
         recyclerView = findViewById(R.id.recyclerView_bookings);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        db = FirebaseFirestore.getInstance();
+
         bookingDataArrayList = new ArrayList<BookingData>();
-        myAdapter = new BookingAdapter(CatererViewBooking.this,bookingDataArrayList);
+        myAdapter = new BookingAdapter(CatererViewBooking.this, bookingDataArrayList);
 
         recyclerView.setAdapter(myAdapter);
 
-        EventChangeListener();
-    }
 
-    private  void EventChangeListener(){
-        db.collection("BookingsCaterer").orderBy("bkfullname", Query.Direction.ASCENDING)
-                .addSnapshotListener(new EventListener<QuerySnapshot>() {
-                    @Override
-                    public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-
-                        if (error != null){
-                            Log.e("Firestore Error",error.getMessage());
-                            return;
-                        }
-
-                        for (DocumentChange dc : value.getDocumentChanges()){
-                            if (dc.getType() == DocumentChange.Type.ADDED){
-
-                                bookingDataArrayList.add(dc.getDocument().toObject(BookingData.class));
-                            }
-
-                            myAdapter.notifyDataSetChanged();
-                        }
-                    }
-                });
     }
 }
+
+
